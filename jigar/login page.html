@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDEEYDVSC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YDEEYDVSC5');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 9px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 49%;
+            display: inline-block;
+        }
+
+        nav.nav {
+            margin: 30px 0;
+        }
+
+        nav.nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <div id="ele"> 
+            <nav class="nav">
+                <a href="Homepage (index.html).html">Home</a>
+                <a href="Loan Information Page ..html">Loan Information</a>
+                <a href="Farming Tips Page.html">Farming Tips</a>
+                <a href="Government Schemes Page .html">Govt. Schemes</a>
+                <a href="Contact Page .html">Contact</a>
+                <a href="login page.html">Login</a>
+            
+        </div>
+    </center>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h1>Login</h1>
+        <form onsubmit="return validateForm(event)">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm password">
+
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Enter your email">
+
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" id="mobileNumber" placeholder="10-digit mobile number">
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+
+            const user = document.getElementById('username').value.trim();
+            const pass = document.getElementById('password').value.trim();
+            const confirm = document.getElementById('confirmPassword').value.trim();
+            const email = document.getElementById('Email').value.trim();
+            const mobile = document.getElementById('mobileNumber').value.trim();
+
+            if (!user) {
+                alert("Please enter the username.");
+                return false;
+            }
+            if (!pass) {
+                alert("Enter password.");
+                return false;
+            }
+            if (!confirm) {
+                alert("Confirm your password.");
+                return false;
+            }
+            if (pass !== confirm) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            if (!email) {
+                alert("Enter email ID.");
+                return false;
+            }
+            if (!mobile || isNaN(mobile) || mobile.length !== 10) {
+                alert("Enter a valid 10-digit mobile number.");
+                return false;
+            }
+
+            // Redirect to success page
+            window.location.href = "login-success.html";
+            return true;
+        }
+    </script>
+</body>
+</html>

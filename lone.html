@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDEEYDVSC5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YDEEYDVSC5');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loan Information</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YDEEYDVSC5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YDEEYDVSC5');
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJBT39J3TJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SJBT39J3TJ');
+    </script>
+
     <style>
-		body { font-family: arial; }
-		h1 { font-size: 25px; }
-		#box1, #box2, #box3 {
-			background: lightgreen;
-			padding: 10px;
-			border: 1px solid #000;
-			width: 200px;
-			overflow: hidden;
-			height: auto; /* Initially set to auto to show the content */
-			transition: height 1s ease-out; /* Smooth transition for height */
-			margin-bottom: 10px; /* Add space between boxes */
-		}
+        body { font-family: arial; }
+        h1 { font-size: 25px; }
 
-		#box1.closed, #box2.closed, #box3.closed {
-			height: 0; /* Boxes are closed when they have the 'closed' class */
-			padding: 0; /* Remove padding when closed */
-		}
-	</style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJBT39J3TJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        #box1, #box2, #box3 {
+            background: lightgreen;
+            padding: 10px;
+            border: 1px solid #000;
+            width: 200px;
+            overflow: hidden;
+            height: auto;
+            transition: height 1s ease-out;
+            margin-bottom: 10px;
+        }
 
-  gtag('config', 'G-SJBT39J3TJ');
-</script>
+        #box1.closed, #box2.closed, #box3.closed {
+            height: 0;
+            padding: 0;
+        }
+    </style>
+
     <link rel="stylesheet" href="jigar/styles.css">
 </head>
+
 <body>
-  <center> 
+
+<center> 
     <div id="ele">
         <nav class="nav">
             <a href="Homepage (index.html).html">Home</a>
@@ -54,48 +56,50 @@
             <a href="Farming Tips Page.html">Farming Tips</a>
             <a href="Government Schemes Page .html">Govt. Schemes</a>
             <a href="Contact Page .html">Contact</a>
-            </h1>
+        </nav>
     </div>
-    </center>
-    <header>
-        <h1>Farmer Loan Information</h1>
-    </header>
+</center>
 
-    <section class="content" style="margin-top: -30px;">
-        <div class="forblr">
-            <h2 style="font-size: 30px;">Government and Private Loans for Farmers</h2>
-            <p>Find the best loan options to improve your farming business.</p>
-        
-        </div>
+<header>
+    <h1>Farmer Loan Information</h1>
+</header>
+
+<section class="content" style="margin-top: -30px;">
+    <div class="forblr">
+        <h2 style="font-size: 30px;">Government and Private Loans for Farmers</h2>
+        <p>Find the best loan options to improve your farming business.</p>
+    </div>
 </section>
-        <div id="box1" class="closed">
-            <h2 class="test">Test Box 1</h2>
-            <p>Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing elit. Laborum nostrum voluptate delectus.</p>
-        </div>
 
-        <div id="box2" class="closed">
-            <h2 class="test">Test Box 2</h2>
-            <p>Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing elit. Laborum nostrum voluptate delectus.</p>
-        </div>
-        
-        <div id="box3" class="closed">
-            <h2 class="test">Test Box 3</h2>
-            <p>Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing elit. Laborum nostrum voluptate delectus.</p>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-           <ul>
-    <li> <button class="slideToggleBtn" data-target="#box1">Kisan Credit Card (KCC):</button>Low-interest rate loans for farmers.</li>
-	<li><button class="slideToggleBtn" data-target="#box2">Agri-Term Loans:</button>Long-term loans for farm machinery.</li>
-	<li><button class="slideToggleBtn" data-target="#box3">Crop Loans:</button>Special loans for crop production.</li>
+<div id="box1" class="closed">
+    <h2>Test Box 1</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div id="box2" class="closed">
+    <h2>Test Box 2</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div id="box3" class="closed">
+    <h2>Test Box 3</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<ul>
+    <li><button class="slideToggleBtn" data-target="#box1">Kisan Credit Card (KCC):</button> Low-interest loans</li>
+    <li><button class="slideToggleBtn" data-target="#box2">Agri-Term Loans:</button> Machinery loans</li>
+    <li><button class="slideToggleBtn" data-target="#box3">Crop Loans:</button> Crop production loans</li>
 </ul>
-<script>
-   
-    $('.slideToggleBtn').click(function(){
-        var targetBox = $(this).data('target');
-        $(targetBox).toggleClass('closed');
-    });
-</script>
-    
-</body>
 
+<script>
+$('.slideToggleBtn').click(function(){
+    var targetBox = $(this).data('target');
+    $(targetBox).toggleClass('closed');
+});
+</script>
+
+</body>
 </html>
